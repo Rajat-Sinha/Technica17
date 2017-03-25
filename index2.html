@@ -1,0 +1,527 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Technica '17</title>
+		<meta charset="utf-8" />
+		<meta name= "keywords" content="Technica,techfest nitjsr,technica nit,technica nit jsr,Metallurgy,B.Tech,Metallurgical,Material,National,Institute,Technology,jamshedpur,technical fest,
+		paper prsentation posst presentation,Material Innovation,MME,mme" >
+		<meta name="Description" content="TECHNICA is the annual national symposium of the SMES (Society for Metallurgical and Materials Engineering Students) of NIT Jamshedpur. TECHNICA'17 offers a plethora of events to furnish your skills as a metallurgist helps you employ your innovative ideas to the academia and industry. It is a golden opportunity for students of Metallurgical and Materials Engineering to learn from the experts of the field. It consists of a wide variety of events including paper presentation, poster presentation, model making, metal quiz, metallography etc." >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" src="assets/js/sound-mouseover.js"></script>
+		<script src="assets/js/countdown.js"></script>
+		<link rel="shortcut icon" href="images/tech.jpg" type="image/x-icon">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+		<link rel="stylesheet" href="" />
+        <link rel="stylesheet" href="asset/css/styles.css" />
+		<link rel="stylesheet" href="asset/css/fiddle.css" />
+        <link rel="stylesheet" href="asset/countdown/jquery.countdown.css" />
+		
+		<style>
+	@font-face {
+    font-family: brown;
+    src: url('fonts/brown.ttf');
+}
+			.hi {
+				width: 50px;
+				height: 72px;
+				margin-left:60px;
+				background-image: url("images/fiddle.png");
+				
+				-webkit-animation: play .8s steps(10) infinite;
+				   -moz-animation: play .8s steps(10) infinite;
+					-ms-animation: play .8s steps(10) infinite;
+					 -o-animation: play .8s steps(10) infinite;
+						animation: play .8s steps(10) infinite;
+			}
+
+			@-webkit-keyframes play {
+			   from { background-position:    0px; }
+				 to { background-position: -500px; }
+			}
+
+			@-moz-keyframes play {
+			   from { background-position:    0px; }
+				 to { background-position: -500px; }
+			}
+
+			@-ms-keyframes play {
+			   from { background-position:    0px; }
+				 to { background-position: -500px; }
+			}
+
+			@-o-keyframes play {
+			   from { background-position:    0px; }
+				 to { background-position: -500px; }
+			}
+
+			@keyframes play {
+			   from { background-position:    0px; }
+				 to { background-position: -500px; }
+			}
+			
+			body.day {
+			
+			-webkit-perspective: 250px;
+		}
+
+		p.day {
+			font: 50px sans-serif;
+			text-align: center;
+			background-images:url('images/banner.jpg');
+			-webkit-animation: rotate 3s linear infinite alternate;
+		}
+		@-webkit-keyframes rotate {
+			0% { -webkit-transform: rotateY(90deg); }
+			100% { -webkit-transform: rotateY(-90deg); }
+		}
+		h2.day {
+			font: 50px sans-serif;
+			text-align: center;
+			background-images:url('images/banner.jpg');
+			-webkit-animation: rotate 3s linear infinite alternate;
+		}
+		@-webkit-keyframes rotate {
+			0% { -webkit-transform: rotateY(-90deg); }
+			100% { -webkit-transform: rotateY(90deg); }
+		}
+		
+		.ball {
+			margin-top:-50px;
+			padding-top:5px;
+			width:300px;
+			height:40px;
+			text-align:center;
+			color:white;
+			font:20px bold brown;
+			background:gray;;
+			border:3px solid gray;
+			position:absolute;
+			animation: movement 10s linear infinite;
+			-webkit-animation: movement 10s linear infinite;
+			left:0;
+		}
+		@keyframes movement {
+			100% {
+				left:100%;
+			}
+		}
+		@-webkit-keyframes movement {
+			100% {
+				left:100%;
+			}
+		}
+		.col {
+    clear: both; 
+}
+
+.col  {
+    st-style-type: none;
+    /*margin-top:-30px;*/
+    padding: 0;
+    width: 300px;
+    height: 40px;
+    border: 1px sod #efefef;
+    position: relative;
+    float: left;
+    background: #ffffff; /* old browsers */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    
+    /* more curly */
+    border-radius: 0 0 120px 120px / 0 0 6px 6px;
+}
+
+.col :after { 
+    z-index: -1; 
+    position: absolute; 
+    background: transparent; 
+    width: 70%; 
+    height: 55%; 
+    content: ''; 
+    right: 10px; 
+    bottom: 12px;
+    -webkit-transform:  skew(15deg) rotate(6deg);
+    -moz-transform:     skew(15deg) rotate(6deg);
+    transform:          skew(15deg) rotate(6deg);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+} 
+
+	.col :before { 
+    z-index: -2; 
+    position: absolute; 
+    background: transparent; 
+    width: 70%; 
+    height: 55%; 
+    content: ''; 
+    left: 10px;
+    bottom: 12px;
+    -webkit-transform:  skew(-15deg) rotate(-6deg); 
+    -moz-transform:     skew(-15deg) rotate(-6deg); 
+    transform:          skew(-15deg) rotate(-6deg);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+}
+		.col {
+		      color:black;
+			  font:20px bold tahoma;
+			  padding:5px;
+			-webkit-animation: gpu-cpu 15s ease-in-out infinite alternate;        
+		}
+
+		@-webkit-keyframes gpu-cpu {
+			0% { -webkit-transform: translate3d(0,0,0); width: 300px; } 
+		  100% { -webkit-transform: translate3d(800px,0,0);width:300px; }
+		}
+
+		@-webkit-keyframes gpu {
+			0% { -webkit-transform: translate3d(   0,0,0); } 
+		  100% { -webkit-transform: translate3d(800px,0,0); }
+		}
+         
+		.new {
+			clear: both; 
+		}
+		.new{
+		    margin-top:60px;
+			list-style-type: none;
+			width: 800px;
+			height: 230px;
+			text-align:center;
+			padding:30px;
+			color:white;
+			border: 1px solid #efefef;
+			position: relative;
+			float: left;
+			background: darkslategray; /* old browsers */
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+			-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+			
+			/* more curly */
+			border-radius: 0 0 120px 120px / 0 0 6px 6px;
+		}
+
+		.new:after { 
+			z-index: -1; 
+			position: absolute; 
+			background: transparent; 
+			width: 70%; 
+			height: 55%; 
+			content: ''; 
+			right: 10px; 
+			bottom: 12px;
+			-webkit-transform:  skew(15deg) rotate(6deg);
+			-moz-transform:     skew(15deg) rotate(6deg);
+			transform:          skew(15deg) rotate(6deg);
+			-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+			-moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+			box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+		} 
+
+		.new:before { 
+			z-index: -2; 
+			position: absolute; 
+			background: transparent; 
+			width: 70%; 
+			height: 55%; 
+			content: ''; 
+			left: 10px;
+			bottom: 12px;
+			-webkit-transform:  skew(-15deg) rotate(-6deg); 
+			-moz-transform:     skew(-15deg) rotate(-6deg); 
+			transform:          skew(-15deg) rotate(-6deg);
+			-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+			-moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+			box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+		}
+		.responsive-image {
+				width: 1000px;
+				max-width: 100%;
+				height:auto;
+		}
+		body {
+			font-size: 100%;
+			line-height: 1.6875;
+			font-family:Georgia;
+		}
+		@media only screen and (max-width: 400px) {
+			body { font-size:90%;}
+		}
+		@media only screen and (max-width: 800px) {
+			body { font-size:100%;}
+		} 
+        
+		HTML,BODY{cursor: url("tsnapitc.ani"), url("tsnapitc.gif"), auto;}
+		img:hover,a:hover{cursor: url("tcurlz.ani"), url("tcurlz.gif"), auto;}  
+		</style>
+	</head>
+	<body class="landing"  onmouseover="playclip();" onmouseleave="playclip();">
+	
+		<audio>
+			<source src="click.mp3">
+			<source src="click.ogg">
+		</audio>
+		<!--<audio id="mySoundClip1"> -->
+		<div id="sounddiv"><bgsound id="sound"></div>
+		<div id="page-wrapper">
+            <div>
+			    
+			<!-- Header -->
+				<header id="header">
+				<h1 id="logo"><a href="update.html">Results are out</a></h1>
+				<marquee width="35%" behavior="alternate" scrollamount=2>Results are Out!! <a href="metalab.pdf">Metalab(Prelims)</a> <a href="metal.pdf">MetalMorph(prelims)</a></marquee><br/>
+				<marquee width="35%" behavior="alternate" scrollamount=2 style="margin-top: 0px">Results are Out!! <a href="meta.pdf">Metarathon(Prelims)</a> <a href="ext.pdf">Extempore(prelims)</a></marquee>
+					
+					<nav id="nav">
+						<ul>
+							
+							
+							<li><a href="register.html" class="button special">Register</a></li>
+							<li><a href="live/">Technica Live Broadcast</a></li>
+							<li>
+								<a href="#">Menu</a>
+								<ul>
+									<li><a href="gallery/index.html">Gallery</a></li>
+									<li>
+										<a href="#">Events</a>
+										<ul>
+											
+											<li><a href="events/rhet.html">Rhetorix</a></li>
+											<li><a href="events/chitra.html">Chitrankit</a></li>
+											<li><a href="events/magnum.html">Magnum Opus</a></li>
+											<li><a href="events/morph.html">Metalmorph</a></li>
+											<li><a href="events/ips.html">Industrial Problem Solving</a></li>
+											<li><a href="events/metalab.html">Metalab</a></li>
+											<li><a href="events/metarathon.html">Metarathon</a></li>
+											<li><a href="events/metalquiz.html">Metal Quiz</a></li>
+											<li><a href="events/quiz.html">Quizzica</a></li>
+											<li><a href="events/iv.html">Industrial Visit</a></li>
+											<li><a href="events/ext.html">Extempore</a></li>
+											<li><a href="events/gl.html">Guest lecture</a></li>
+										</ul>
+									</li>
+									<!--
+									<li> 
+									
+									<a href="online.html">Online Events</a>
+									<ul>
+										<li><a href="online.html">Details</a></li>
+									</ul>
+									
+									</li>
+									-->
+								</ul>
+							</li>
+							<li><a href="sponsors.html">Sponsors</a></li>
+							<li><a href="faq.html">FAQs</a></li>
+							<li><a href="contact/index.html#!/core_team">Contact us</a></li>
+							<li><a href="update.html" class="button special">Result & Notification<!--<sub>(0)</sub>--></a></li>
+						</ul>
+					</nav>
+				</header>
+			<!-- Banner -->
+			<!--srcset="images/tag.jpg 768w, images/technica.png 2000w"-->
+				<section id="banner">
+					<div class="content"><!--row 4u 6u(medium) 12u$(xsmall)-->
+						<img class="rotate" onmouseover="playclip();" onmouseleave="playclip();" src="images/tech.png"   alt="Technica" style="width: 10em;margin-right:25em;margin-top:-70px;"/><!--margin-top:-70px;-->
+						<br />
+						<div >
+						    <header>
+							<!--<a href="about.htm" onmouseover="playclip();">Mouseover Sound Link</a><br> 
+							<a href="about.htm" onmouseover="playclip();"><img src="images/sound-image.jpg" width="125" height="125" border="0" alt="image"></a><br> 
+							<div onmouseover="playclip();" style="border: #C0C0C0 1px solid; background-color: #F0F0F0; text-align: center; width: 250px; padding: 8px;">Mouseover Sound Div Area</div> 
+							
+								<h2 class="align-center" style="margin-top:-10px;font-weight:bold;font-style:tahoma;">SMES | NIT Jamshedpur</h2>
+								<h4 class="align-center" style="color:	white;margin-top:-30px;margin-right:40px;"><em style="background-color:gray;padding-left:10px;padding-right:5px;padding-top:2px;padding-bottom:2px;border:1px black ;border-radius:50px;">presents</em></h4>
+								-->
+								<!--<div class="ball">SMES<br>NIT Jamshedpur<br>Presents</div>-->
+								<div class="col day">SMES NIT-Jamshedpur Presents</div>
+								<img src="images/technica.png" class="responsive-image"  style=""><!--margin-top:-180px;-->
+								<!--<h4 style="margin-top:-250px;color:	#9ACD32;">Annual National Symposium Under <a href="smes.co.in">SMES</a> of NIT Jamshedpur</h4>
+								-->
+								<h4 class="tag" style="font-family:brown;margin-top:-40px;color:white;margin-right:200px;">Recrystallize your Grey cells</h4><!--margin-top:-280px-->
+				
+								<hr />
+								<!--<div id="countdown" style="margin-top:-30px;"></div>--><!--margin-top:-30px;-->
+								<p style="color:#71D2AF;font-size: 40px;margin-right:5px;text-align: center;text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);">We Welcomes You!!<p>
+								<h2 class="align-center day" style="margin-top:-60px;">20-22<sup>nd</sup> January, 2017</h2><!--margin-top:-40px;-->
+								<p class="day" style="color:white;font-size: 40px;margin-right:5px;text-align: center;text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);">Days<span style="margin-left:30px;">Hrs</span><span style="margin-left:40px;">Mins</span><span style="margin-left:20px;">Secs</span><p>
+					
+						    </header>							
+						</div>
+						</div>
+					<a href="#one" class="goto-next scrolly" style="">Next</a><!--margin-top:-40px;-->
+				</section>
+            </div>
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom" >
+					<span class="image fit main"><img src="images/bg3.jpg" alt="" /></span>
+					<div class="content" style="background-image:url('images/one.jpg');">
+						<div class="container">
+							<div class="row 150%">
+								<div class="4u 12u$(medium)">
+									<header>
+										<div class="hi"></div>
+										<h1 style="font-size:50px;">Technica </h1>
+										<h2>Organized by SMES</h2>
+										<p>In association with IIM Jamshedpur Chapter</p>
+										
+									</header>
+								</div>
+								<div class="row 8u 12u$(medium)">
+									<p class="new">TECHNICA is the annual national symposium of the SMES (Society for Metallurgical and Materials Engineering Students) of NIT Jamshedpur. TECHNICA'17 offers a plethora of events to furnish your skills as a metallurgist helps you employ your innovative ideas to the academia and industry. It is a golden opportunity for students of Metallurgical and Materials Engineering to learn from the experts of the field. It consists of a wide variety of events including paper presentation, poster presentation, model making, metal quiz, metallography etc.</p>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right row" >
+					<span class="image fit main"><img src="images/img1.jpg" alt="" /></span>
+					<div class="content row 4u 6u(medium) 12u$(xsmall)" style="background-image:url('images/two.jpg');padding-right:40px;">
+						<div>
+							<div>
+								<img  class="rotate" src="images/eventico.png" height="100px" style="margin-left:110px;">
+							</div>
+							<div>
+								<h3 style="margin-left:100px;">Events(I)</h3>
+							</div>
+						</div>
+						<div style="margin-left:40px;" >
+							<a href="events/rhet.html" class="button special width">Rhetorix</a><br><br>
+							<a href="events/chitra.html" class="button special width">Chitrankit</a><br><br>
+							<a href="events/magnum.html" class="button special width">Magnum Opus</a><br><br>
+							<a href="events/morph.html" class="button special width">Metalmorph</a><br><br>
+							<a href="events/ips.html" class="button special width">Industrial Problem Solving</a><br><br>
+						    <a href="events/metalab.html" class="button special width">Metalab</a>
+							
+						</div>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left row">
+					<span class="image fit main bottom"><img src="images/bg2.jpg" alt="" /></span>
+					<div class="content row 4u 6u(medium) 12u$(xsmall)" style="background-image:url('images/three.jpg');">
+						<div  >
+							<div >
+								<img class="rotate" src="images/eventico.png" height="100px" style="margin-left:120px;">
+							</div>
+							<div >
+								<h3 style="margin-left:110px;">Events(II)</h3>
+							</div>
+						</div>
+						<div style="margin-left:50px;" >
+						    <a href="events/metarathon.html" class="button special width">Metarathon</a><br><br>
+							<a href="events/metalquiz.html" class="button special width">Metal Quiz</a><br><br>
+							<a href="events/quiz.html" class="button special width">Quizzica</a><br><br>
+							<a href="events/iv.html" class="button special width">Industrial Visit</a><br><br>
+							<a href="events/ext.html" class="button special width">Extempore</a><br><br>
+							<a href="events/gl.html" class="button special width">Guest lecture</a>
+						</div>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style1 special fade-up" style="background-image:url('images/four.jpg');">
+					<div class="container">
+						<header class="major">
+							<h2>We welcome you!</h2>
+							<p>20-22<sup>nd</sup> January, 2017</p>
+						</header>
+						<div class="box alt">
+							<div class="row uniform">
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<!--<a href="online.html">
+									<span><img src="images/onlineicon.png" height="100px"></span></a>
+									<h3 style="margin-right:-5px;">Online Events</h3>
+									<p>Click here to learn more about the online events and win prizes</p>-->
+									<a href="register.html">
+										<span><img class="rotate" src="images/regicon.png" height="100px"></span>
+									</a>
+									<h3 style="margin-right:-10px;">Register</h3>
+									<p>Click here to register for Technica 17 online and be updated on the events</p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+								<a href="gallery/index.html">	<span><img class="rotate" src="images/galleryicon.png" height="100px"></span></a>
+									<h3 style="margin-right:-10px;">Gallery</h3>
+									<p>Peep into our past, and have a look to the fun and learning process in Technica 2016 and 2015</p>
+								</section>
+								<section class="4u$ 6u(medium) 12u$(xsmall)">
+									<a href="ca.html">
+									<span><img class="rotate" src="images/ambasicon.png" height="100px"></span></a>
+									<h3 style="margin-right:-10px;">Campus Ambassador</h3>
+									<p>Be a part of the organizing team of Technica 17. Register to become a Campus Ambassador</p>
+								
+								</section>
+								<!--<section class="6u 6u(medium) 12u$(xsmall)">
+									
+									<a href="online.html">
+									<span><img src="images/onlineicon.png" height="100px"></span></a>
+									<h3 style="margin-right:-5px;">Online Events</h3>
+									<p>Click here to learn more about the online events and win prizes</p>
+								</section>-->
+							
+								<section class="12u 12u(medium) 12u$(xsmall)">
+									<a href="https://www.facebook.com/smestechnica17/">
+									<span><img class="rotate" src="images/fbicon.png" height="100px"></span></a>
+									<h3 style="margin-right:-10px;">Facebook</h3>
+									<p>Like us on Facebook for regular news feeds.</p>
+									
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions">
+								<li><a href="contact/index.html#!/core_team" class="button">Contact us</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+				<script>
+					$(document).ready(function(){
+						$('[data-toggle="tooltip"]').tooltip().css('background-color','black'); 
+					});
+				</script>
+			<!-- Footer -->
+				<footer id="footer">
+					<embed src="make.mp3" autostart="true repeat" loop="true" width="2" height="0"></embed>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/smestechnica17/"><img class="rotate" src="images/f.jpg" height="80" width="80" style="border-radius:10px;" data-toggle="tooltip" data-placement="top" title="https://www.facebook.com/smestechnica17/"></a></li>
+						<li><a href="#"><img class="rotate" src="images/Metadata.png" height="80" width="80" data-toggle="tooltip" data-placement="top" title="MetaData"></a></li>
+						<li><a href="http://main.smes.co.in/"><img class="rotate" src="images/smes.png" height="80" width="80" data-toggle="tooltip" data-placement="top" title="Society for Metallurgical Engineering Students"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Copyright &copy; 2017 All rights reserved.</li><li>Design: <a href="webteam.html">Technica WebTeam</a></li>
+					</ul>
+				</footer>
+
+		</div>
+		
+        
+		<!-- Scripts -->
+			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!--countdown-->
+			<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+			<script src="asset/countdown/jquery.countdown.js"></script>
+			<script src="asset/js/script.js"></script>
+
+	</body>
+</html>

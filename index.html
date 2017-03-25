@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technica '17</title>
+	<meta charset="utf-8" />
+	<meta name= "keywords" content="Technica,techfest nitjsr,technica nit,technica nit jsr,Metallurgy,B.Tech,Metallurgical,Material,National,Institute,Technology,jamshedpur,technical fest,
+	paper prsentation posst presentation,Material Innovation,MME,mme" >
+	<meta name="Description" content="TECHNICA is the annual national symposium of the SMES (Society for Metallurgical and Materials Engineering Students) of NIT Jamshedpur. TECHNICA'17 offers a plethora of events to furnish your skills as a metallurgist helps you employ your innovative ideas to the academia and industry. It is a golden opportunity for students of Metallurgical and Materials Engineering to learn from the experts of the field. It consists of a wide variety of events including paper presentation, poster presentation, model making, metal quiz, metallography etc." >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/tech.jpg" type="image/x-icon">
+<style>
+body{
+
+background-color:gray;
+}
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+<link rel="shortcut icon" href="images/log4o.png" type="image/x-icon">
+
+<!-- Locating the  CSS file of the bootstrap-->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/custom2.css"/>
+<!-- Locating javascript/JQuery file -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Locating the javascript file of the bootstrap -->
+<script src="assets/js/bootstrap.js"></script>
+
+<!-- Locating Javascript file of Bootbox -->
+<script src="assets/js/bootbox.min.js"></script>
+<script type="text/javascript" src="assets/js/sound-mouseover.js"></script>
+</head>
+<body onload="myFunction()" style="background-color:gray;" nmouseover="playclip();" onmouseleave="playclip();">
+	
+		<audio>
+			<source src="click.mp3">
+			<source src="click.ogg">
+		</audio>
+		<!--<audio id="mySoundClip1"> -->
+		<div id="sounddiv"><bgsound id="sound"></div>
+
+<div class="row center" style="margin-top:250px">
+    <div class="col-md-2"><embed src="make.mp3" autostart="true repeat" loop="true" width="2" height="0"></embed></div>
+    <div class="col-md-1"></div>
+	<div class="col-md-2">
+	    <img src="images/nit.png" class="img-responsive"  alt="Technica" style="width: 150px;height:150;"/><!--margin-top:-70px;-->
+	</div>
+	<div class="col-md-2" style="margin-top:100px;">
+	 <div id="loader"></div>
+	</div>
+	<div class="col-md-2">
+	  <img src="images/smes.png"  class="img-responsive" alt="Technica" style="width: 180px;height:180;"/><!--margin-top:-70px;-->
+	</div>
+	<div class="col-md-2"></div>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <meta http-equiv="refresh" content="1; url=index2.html" />
+</div>
+<script type="text/javascript">
+	<!--
+	  if (screen.width <= 1080) {
+		window.location = "index2.html";
+	    }
+	 //-->
+</script>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
