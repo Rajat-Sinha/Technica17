@@ -1,0 +1,148 @@
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%; overflow:hidden;}
+.relative{ position:relative;}
+
+/* Global properties ======================================================== */
+
+body{ background:#000; border:0;color:#88817a; line-height:21px; min-width:1156px; overflow:hidden}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+.block {height:61px;}
+.extra {min-height:100%; height:auto !important; height:100%; margin: 0 auto -61px;}
+body, html {height:100%;}
+
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width: 940px; padding-right:10px }
+
+#bg{ position:fixed; z-index:-1;background-color:darkslategray;}
+.bg1{ background:url(../images/bg_footer.png) center 0 repeat-x; height:61px;}
+
+.spinner{ position:absolute;background: url(../images/loader.gif) 50% 50% no-repeat #000; z-index:99; width:100%; height:100%; top:0; left:0}
+
+
+/* ============================= main layout ====================== */
+
+a{ color:#88817a; text-decoration: none; outline:none}
+a:hover{ color:#fff}
+h1{ padding:23px 0 0 0;color:white;}
+h2{ font-size:30px; color:#fff; padding:19px 0 6px 0; background: url(../images/line_hor1.gif) 0 bottom repeat-x; line-height:1.2em;}
+h2.marg_bot1{ margin-bottom:34px;}
+h3{ font-size:18px; color:#fff; padding:39px 0 20px 0; line-height:1.2em;}
+h3.under{ background:url(../images/line_hor1.gif) 0 bottom repeat-x; padding:52px 0 9px 0; margin-bottom:33px;}
+#page_services h3.under{ padding-top:46px;}
+p{ padding-bottom:21px;}
+
+/* ============================= header ====================== */
+header{ height:800px; width:206px; position:absolute; left:0; z-index:4}
+
+
+
+#menu { padding-top:14px;}
+#menu > li { position:relative; width:286px;}
+#menu > li > a{ position:relative; background:url(../images/menu_bg.png) 0 0 no-repeat; width:156px; display:block; font-size:15px; color:#fff; line-height:52px; padding-left:30px;}
+#menu > li:hover > a, #menu > .active > a{}
+#menu > li > a span{ position:absolute; top:0; left:-20px; right:0; height:100%; background:url(../images/menu_bg_active.jpg) right 0 no-repeat;}
+#menu > li > a strong{ position:relative;}
+
+.submenu_1{ position:absolute; top:1px; left:169px; background:#0c0a07; z-index:10}
+.submenu_1 ul{ position:relative; box-shadow: 1px 1px 4px #000; -moz-box-shadow: 1px 1px 4px #000;-webkit-box-shadow: 1px 1px 4px #000; background:url(../images/submenu_line.gif) 8px 6px no-repeat; width:204px; padding:8px 2px 4px}
+.submenu_1 li { position:relative; line-height:38px; background:url(../images/submenu_line.gif) center bottom no-repeat; padding-bottom:2px; padding-top:1px;}
+.submenu_1 a{ padding:0 19px; font-size:22px; color:#59524c; letter-spacing:-2px; display:block;}
+.submenu_1 li:hover > a{ background:url(../images/submenu_bg_active.gif) 0 0 repeat-x #fd870e; color:#fff}
+
+.submenu_2{ position:absolute; top:2px; left:169px; background:#0c0a07; z-index:10}
+.submenu_2 li:hover > a{ background:url(../images/submenu2_bg_active.gif) 0 0 repeat-x #1f1812;}
+
+/* ============================= content ====================== */
+
+#content{ height:839px; padding:6px 0; width:812px; margin:0 auto; overflow:hidden;}
+#content > ul { position:relative; height:839px; width:100%;}
+#content > ul > li{ position:relative; width:100%; height:100%}
+
+.bg_cont{ position:absolute; top:0 ; left:0; z-index:1; width:100%}
+.box{ position: relative; z-index:2; margin:56px; overflow:hidden;}
+.box > div{ position:relative;}
+
+.button1{ display:inline-block; position:relative; box-shadow: 1px 1px 4px #111; -moz-box-shadow: 1px 1px 4px #111; -webkit-box-shadow: 1px 1px 4px #111;}
+.button1 span{ display:block; border:1px solid #1d1d1d; position:relative; background:#000000; padding:0 19px; line-height:35px; color:#fff; text-transform:uppercase;}
+.button1 strong{ font-weight:normal; background:url(../images/marker_1.gif) right 14px no-repeat; display:block; padding-right:19px;}
+.button1 .active{ background:url(../images/button1_bg.gif) 0 0 repeat-x #fd870e; border:1px solid #fd870e; color:#fff; position:absolute; top:0; left:0}
+.button1 .active strong{}
+
+.pad_bot1{ padding-bottom:25px;}
+.pad_bot2{ padding-bottom:15px;}
+.pad_left1{ padding-left:60px;}
+.pad_left2{ padding-left:40px;}
+.pad_left2_new{ padding-left:40px;}
+.marg_right1{ margin-right:20px;}
+.marg_bot1{ margin-bottom:5px;}
+#page_contacts .pad_left1{ padding-left:56px;}
+
+figure { position:relative; background:#212121; margin-top:6px; box-shadow: 1px 1px 4px #111; -moz-box-shadow: 1px 1px 4px #111; -webkit-box-shadow: 1px 1px 4px #111;}
+figure a{ display:block;}
+figure .act{ background:#fff; position:absolute; top:0; left:0; width:100%; height:100%; display:block;}
+figure img, figure iframe{ position:relative; padding:5px;}
+
+.color1{ color:#fff;}
+
+.list1{ padding:6px 15px 4px 0;} 
+.list1 li{ margin-bottom:1px; background:#000; border:1px solid #1c1c1c; line-height:35px; position: relative;box-shadow: 1px 1px 4px #111; -moz-box-shadow: 1px 1px 4px #111; -webkit-box-shadow: 1px 1px 4px #111;}
+.list1 a{ display:block; padding-left:27px; text-transform:uppercase; color:#fff; background: url(../images/marker_1.gif) 10px 14px no-repeat; position:relative;}
+.list1 span{ position:absolute; top:0; left:0; width:100%; height:100%; display:block; background:url(../images/button1_bg.gif) 0 0 repeat-x #fd870e; }
+.list1 a:hover{ color:#fff;}
+
+.scroll{height:590px; width:100%; overflow:hidden}
+.track{ width:1px; height:600px; padding:30px 0; top: 50px !important; left:700px !important; background:#1f1f1f}
+.shuttle{ width:5px; height:55px; background:#000; margin-left:-2px;}
+._up-butt, ._down-butt{ height:0px !important;}
+
+/* ============================= footer ====================== */
+
+footer { padding-top:27px; line-height:16px; color:#a49b92}
+footer a{ color:#a49b92}
+footer a:hover{ color:#fff}
+
+footer .right{ padding-top:7px;}
+
+#icons{} 
+#icons li{ padding-right:39px; background: url(../images/footer_line.gif) right 0 no-repeat; margin-right:44px; float:left; padding-top:5px; padding-bottom:10px;}
+#icons img{ float:left; margin-right:10px;}
+#icons a{ display:inline-block; font-size:10px; text-transform:uppercase; position:relative;}
+#icons .act{ position:absolute; top:0; left:0;}
+
+/* ============================= forms ============================= */
+	img{
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+transition-duration: 0.8s;
+
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+transition-property: transform;
+cursor:pointer;
+overflow:hidden;
+
+}
+
+img:hover
+{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+
+HTML,BODY{cursor: url("../tsnapitc.ani"), url("../tsnapitc.gif"), auto;}
+a:hover{cursor: url("../tcurlz.ani"), url("../tcurlz.gif"), auto;}  

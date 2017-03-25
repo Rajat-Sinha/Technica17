@@ -1,0 +1,17 @@
+
+.col1, .col2, .col3, .cols, .cols__new { float:left;}
+
+.col1{ width:300px}
+.cols{ width:205px;}
+.cols_new{ width:1305px;}
+.col2{ width:260px;}
+.col3{ width:420px}
+
+#page_services .col1{ width:196px;}
+
+#page_contacts .col1{ width:304px;}
+#page_contacts .col2{ width:335px;}
+#page_contacts .cols{ width:90px;}
+
+#page_privacy .col1{ width:585px;}
+#page_more .col1{ width:675px;}
